@@ -1,0 +1,112 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.modal-form-box {
+  display: block;
+  position: relative;
+}
+
+.input-form {
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.input-form:focus {
+  border-color: var(--accent-colour);
+}
+
+.input-form:focus + .modal-form-icon {
+  fill: var(--accent-colour);
+}
+
+.modal-form-label {
+  color: var(--secondary-text-color);
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.modal-textarea.input-form {
+  resize: none;
+  height: 120px;
+  margin-top: 4px;
+  padding-left: 16px;
+}
+
+.modal-textarea:focus {
+  border-color: var(--accent-colour);
+}
+
+.checkbox-label {
+  color: var(--secondary-text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 0.85;
+  letter-spacing: 0.03em;
+
+  margin-top: 20px;
+}
+
+.checkbox-label::before {
+  display: block;
+  content: "";
+
+  cursor: pointer;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 4px;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  transition-property: border-color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check {
+  bottom: 120px;
+  left: 90px;
+}
+
+.modal-check:checked + .checkbox-label::before {
+  border-color: transparent;
+  background-color: var(--accent-colour);
+  background-image: url(../images/bg-images/check-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.checkbox-icon {
+  position: absolute;
+  width: 11px;
+  height: 8px;
+  opacity: 0;
+  
+  transform: translateX(-50%);
+}
+
+.modal-form-link {
+  color: var(--accent-colour);
+}

@@ -1,0 +1,24 @@
+.logo {
+  color: var(--primary-black-color);
+
+  text-decoration: none;
+
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-colour);
+}
+
+.accent {
+  color: var(--accent-colour);
+}

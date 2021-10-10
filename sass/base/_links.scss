@@ -1,0 +1,16 @@
+.link {
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}
+
+.link-anim:hover,
+.link-anim:focus {
+  color: var(--accent-colour);
+}
+
+.link-anim {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
