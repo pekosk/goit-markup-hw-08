@@ -270,6 +270,69 @@ p:last-child {
   margin-bottom: 12px;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  color: var(--primary-black-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-colour);
+}
+
+.accent {
+  color: var(--accent-colour);
+}
+
+.email-form-text {
+  color: var(--primary-white-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.email-form {
+  display: flex;
+}
+
+.email-input {
+  padding-left: 16px;
+  flex-grow: 1;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -374,43 +437,6 @@ p:last-child {
 }
 
 .modal-form-link {
-  color: var(--accent-colour);
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.logo {
-  color: var(--primary-black-color);
-  text-decoration: none;
-  font-family: Raleway;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--accent-colour);
-}
-
-.accent {
   color: var(--accent-colour);
 }
 
@@ -614,32 +640,6 @@ p:last-child {
 .footer-left-side {
   display: flex;
   align-items: baseline;
-}
-
-.email-form-text {
-  color: var(--primary-white-color);
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.email-form {
-  display: flex;
-}
-
-.email-input {
-  padding-left: 16px;
-  flex-grow: 1;
-  height: 50px;
-  color: var(--primary-white-color);
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .social-links-icons.footer-icons {
