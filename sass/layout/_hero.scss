@@ -36,29 +36,3 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-.hero .button {
-  background-color: var(--accent-colour);
-  color: var(--primary-white-color);
-
-  border: 0px;
-  border-radius: 4px;
-  padding: 10px 32px;
-
-  cursor: pointer;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero .button:hover,
-.hero .button:focus {
-  background-color: var(--accent-secondary-color);
-}
