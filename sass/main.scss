@@ -1,3 +1,6 @@
+// UTILS
+@import './utils/visually-hidden';
+
 // BASE
 @import './base/common';
 @import './base/links';
@@ -11,7 +14,6 @@
 @import './components/section-titles';
 @import './components/thumb';
 @import './components/logo';
-@import './components/titles';
 
 // LAYOUT
 @import './layout/header';
@@ -23,6 +25,3 @@
 @import './layout/portfolio/portf-works';
 @import './layout/portfolio/porf-filter';
 @import './layout/companies';
-
-// UTILS
-@import './utils/visually-hidden';

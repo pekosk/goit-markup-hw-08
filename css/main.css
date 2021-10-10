@@ -1,3 +1,14 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 :root {
   --header-bgc: #ffffff;
   --footer-bgc: #2f303a;
@@ -19,6 +30,12 @@
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
 }
 
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
 img {
   display: block;
 }
@@ -34,10 +51,8 @@ p:last-child {
   margin-bottom: 0;
 }
 
-body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
+.title {
+  margin-top: 0;
 }
 
 .link {
@@ -305,15 +320,6 @@ body {
 
 .accent {
   color: var(--accent-colour);
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .header {
@@ -984,16 +990,5 @@ body {
   margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 6 - var(--work-list-set-gap));
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
