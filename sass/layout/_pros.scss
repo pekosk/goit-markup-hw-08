@@ -38,23 +38,31 @@
       margin-bottom: 30px;
     }
   }
-
 }
 
-// .section.pros {
-//   padding-bottom: 47px;
-// }
+@media screen and (min-width: 768px) {
+  .pros-list {
+    margin-top: calc(-1 * var(--work-list-set-gap));
+    margin-left: calc(-1 * var(--work-list-set-gap));
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pros-list-item {
+    margin-left: var(--work-list-set-gap);
+    margin-top: var(--work-list-set-gap);
+    flex-basis: calc(100% / 2 - var(--work-list-set-gap));
+  }  
+}
 
-// .pros-list {
-//   margin-top: calc(-1 * var(--work-list-set-gap));
-//   margin-left: calc(-1 * var(--work-list-set-gap));
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+@media screen and (min-width: 1200px) {
+  
+  .section.pros {
+    padding-bottom: 47px;
+  }
 
-
-// .pros-list-item {
-//   margin-top: var(--work-list-set-gap);
-//   margin-left: var(--work-list-set-gap);
-//   flex-basis: calc(100% / 4 - var(--work-list-set-gap));
-// }
+  .pros-list-item {
+    margin-top: var(--work-list-set-gap);
+    margin-left: var(--work-list-set-gap);
+    flex-basis: calc(100% / 4 - var(--work-list-set-gap));
+  }
+}
