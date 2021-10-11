@@ -71,9 +71,18 @@ p:last-child {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -751,31 +760,6 @@ p:last-child {
   }
 }
 
-.section.pros {
-  padding-bottom: 47px;
-}
-
-.pros-list {
-  margin-top: calc(-1 * var(--work-list-set-gap));
-  margin-left: calc(-1 * var(--work-list-set-gap));
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pros-icons {
-  width: 100%;
-  height: 120px;
-  background-color: var(--secondary-bgc);
-  padding: 25px 100px;
-  margin-bottom: 30px;
-}
-
-.pros-list-item {
-  margin-top: var(--work-list-set-gap);
-  margin-left: var(--work-list-set-gap);
-  flex-basis: calc(100% / 4 - var(--work-list-set-gap));
-}
-
 .pros-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -793,6 +777,23 @@ p:last-child {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.pros-icons {
+  width: 100%;
+  height: 120px;
+  background-color: var(--secondary-bgc);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .pros-list .title {
+    text-align: center;
+  }
+  .pros-list .text {
+    margin-bottom: 30px;
+  }
 }
 
 .section.job {
