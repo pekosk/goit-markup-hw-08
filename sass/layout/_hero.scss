@@ -1,38 +1,87 @@
-.hero {
-  background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/desktop/bg-desktop/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1600px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .container.hero-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .container.hero-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-color:  #2f303a;
+    background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+        ),
+     url(../images/phone/bg-phone/hero-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     max-width: 480px;
+     padding-top: 118px;
+     padding-bottom: 118px;
+
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+  }
 }
 
 .hero .title {
   color: var(--primary-white-color);
 
-  margin-top: 0;
-  margin-bottom: 30px;
-
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+ }
+
+@media screen and (max-width: 767px) {
+.hero .title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+ }
 }
+
+// .hero {
+//   background-color: #2f303a;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/desktop/bg-desktop/hero-bg.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   max-width: 1600px;
+//   text-align: center;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+// }
+
+// .container.hero-container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 696px;
+// }
+
+// .hero .title {
+//   color: var(--primary-white-color);
+
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+// }
