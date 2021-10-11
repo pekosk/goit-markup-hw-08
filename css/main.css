@@ -830,6 +830,12 @@ p:last-child {
   padding-top: 27px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section.job {
+    display: none;
+  }
+}
+
 .section-team {
   background-color: var(--secondary-bgc);
   padding-top: 94px;

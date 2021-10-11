@@ -33,3 +33,9 @@
   margin: 0;
   padding-top: 27px;
 }
+
+@media screen and (max-width: 1199px) {
+  .section.job {
+    display: none;
+  }
+}
