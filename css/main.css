@@ -935,42 +935,11 @@ p:last-child {
 
 .section-team {
   background-color: var(--secondary-bgc);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-list .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.team-list {
-  margin: auto;
-  margin-top: calc(-1 * var(--work-list-set-gap));
-  margin-left: calc(-1 * var(--work-list-set-gap));
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-top: var(--work-list-set-gap);
-  margin-left: var(--work-list-set-gap);
-  flex-basis: calc(100% / 4 - var(--work-list-set-gap));
-}
-
-.team-list .text {
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-top: 0;
 }
 
 .team-info {
@@ -978,6 +947,20 @@ p:last-child {
   padding-top: var(--work-list-set-gap);
   padding-bottom: var(--work-list-set-gap);
   background-color: var(--primary-white-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work-list {
