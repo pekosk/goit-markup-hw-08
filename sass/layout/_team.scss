@@ -8,56 +8,72 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-info {
-    border-radius: 0px 0px 4px 4px;
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
 
-    padding-top: var(--work-list-set-gap);
-    padding-bottom: var(--work-list-set-gap);
-    background-color: var(--primary-white-color);
-  
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1199px) {
-  .section-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.team-list .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 0;
+}
+
+.team-info {
+  border-radius: 0px 0px 4px 4px;
+
+  padding-top: var(--work-list-set-gap);
+  padding-bottom: 24px;
+  background-color: var(--primary-white-color);
+}
+
+.section-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-item {
+    max-width: 450px;
   }
 }
-// .team-list .title {
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   text-align: center;
 
-//   margin-bottom: 10px;
-// }
+@media screen and (min-width: 768px) {
+  .team-item {
+    margin-top: var(--work-list-set-gap);
+    margin-left: var(--work-list-set-gap);
+    flex-basis: calc(100% / 2 - var(--work-list-set-gap));
+  }
 
-// .team-list {
-//   margin: auto;
-//   margin-top: calc(-1 * var(--work-list-set-gap));
-//   margin-left: calc(-1 * var(--work-list-set-gap));
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .team-item {
-//   margin-top: var(--work-list-set-gap);
-//   margin-left: var(--work-list-set-gap);
-//   flex-basis: calc(100% / 4 - var(--work-list-set-gap));
-// }
-
-// .team-list .text {
-//   color: var(--secondary-text-color);
-//   font-size: 16px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   text-align: center;
-
-//   margin-top: 0;
-// }
+  .team-list {
+    margin: auto;
+    margin-top: calc(-1 * var(--work-list-set-gap));
+    margin-left: calc(-1 * var(--work-list-set-gap));
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and (min-width: 1200px) {
+  .team-item {
+    margin-top: var(--work-list-set-gap);
+    margin-left: var(--work-list-set-gap);
+    flex-basis: calc(100% / 4 - var(--work-list-set-gap));
+  }
+
+  .team-info {
+    padding-bottom: var(--work-list-set-gap);
+  }
+
   .section-team {
     padding-top: 94px;
     padding-bottom: 94px;

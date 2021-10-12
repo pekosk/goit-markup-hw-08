@@ -12,7 +12,7 @@
 .social-links {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .social-links-icons {
@@ -38,7 +38,7 @@
 .social-links-item {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .social-links-item:not(:first-child) {
