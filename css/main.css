@@ -742,13 +742,15 @@ p:last-child {
 
 @media screen and (min-width: 768px) {
   .container.footer-box {
-    display: flex;
     align-items: baseline;
     justify-content: space-between;
   }
   .footer-left-side {
+    display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-between;
+    margin-bottom: 60px;
   }
 }
 
