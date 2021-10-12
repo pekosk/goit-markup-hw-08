@@ -50,11 +50,6 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portf-photo {
-  width: 100%;
-  height: auto;
-}
-
 .works-overlay {
   width: 100%;
   height: 100%;
@@ -80,7 +75,12 @@
   .work-list .item:not(last-child) {
     margin-bottom: var(--work-list-set-gap);
   }
+  .portf-photo {
+    width: 100%;
+    height: auto;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .work-list {
     margin: auto;
@@ -99,8 +99,6 @@
 
 @media screen and (min-width: 1200px) {
   .work-list .item {
-    margin-top: var(--work-list-set-gap);
-    margin-left: var(--work-list-set-gap);
     flex-basis: calc(100% / 3 - var(--work-list-set-gap));
   }
 }
