@@ -38,6 +38,8 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 p:last-child {
@@ -94,13 +96,13 @@ p:last-child {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -1139,10 +1141,6 @@ p:last-child {
   .team-item {
     margin-bottom: var(--work-list-set-gap);
   }
-  .team-photo {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1245,10 +1243,6 @@ p:last-child {
 @media screen and (max-width: 767px) {
   .work-list .item:not(last-child) {
     margin-bottom: var(--work-list-set-gap);
-  }
-  .portf-photo {
-    width: 100%;
-    height: auto;
   }
 }
 
