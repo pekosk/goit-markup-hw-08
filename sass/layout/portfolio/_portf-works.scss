@@ -24,6 +24,8 @@
   border-top: 1px solid rgba(255, 255, 255, 0);
 
   padding: 20px 24px;
+
+  flex-grow: 1;
 }
 
 .overlay-text {
@@ -37,7 +39,9 @@
 }
 
 .work-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
