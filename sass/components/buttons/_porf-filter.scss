@@ -37,3 +37,16 @@
   background-color: var(--accent-colour);
   color: var(--primary-white-color);
 }
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .filt-button-item:nth-child(n + 4) {
+    margin-top: 10px;
+  }
+  .filt-button-item:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+}

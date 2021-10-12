@@ -20,7 +20,7 @@
       <nav class="nav">
         <a href="./index.html" class="logo" lang="en"><span class="accent">Web</span>Studio
         </a>
-
+        <button class="menu-open-button" data-menu-open><svg class="menu-icon"><use href="./images/icons.svg/symbol-defs.svg#icon-menu"></use></svg></button>
         <ul class="site-nav list">
             <li class="nav-item current"><a href="./index.html" class="link link-anim current">Студия</a></li>
             <li class="nav-item"><a href="./portfolio.html" class="link link-anim">Портфолио</a></li>
@@ -33,6 +33,13 @@
             <li class="contacts-item"><a href="tel:+380961111111" class="link link-anim"><svg class="tel-icon contact-icon"><use href="./images/icons.svg/symbol-defs.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
         </ul>
       </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container menu-container">
+        <button class="menu-close-button" data-menu-close><svg class="menu-close-icon">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+            </svg></button>
+            </div>
+    </div>
     </header>
 
     <main>
@@ -332,7 +339,8 @@
                 <button type="submit" class="modal-form-submit">Отправить</button>
         </form>
      </div>
-    </div> 
+    </div>
+    
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>

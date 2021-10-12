@@ -49,3 +49,9 @@
 .contacts .link:focus {
   color: var(--accent-colour);
 }
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
