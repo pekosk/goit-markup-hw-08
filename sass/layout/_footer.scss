@@ -5,6 +5,12 @@
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .footer .logo {
   color: var(--primary-white-color);
 
@@ -12,25 +18,14 @@
 
   font-family: Raleway;
   font-weight: 500;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
 .footer .logo:hover,
 .footer .logo:focus {
   color: var(--accent-colour);
-}
-
-.container.footer-box {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.footer-left-side {
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .adress {
@@ -41,7 +36,7 @@
   color: var(--primary-white-color);
 
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-style: normal;
   font-weight: 400;
@@ -61,26 +56,12 @@
 }
 
 .adress-item:first-child {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .adress-list .link:hover,
 .adress-list .link:focus {
   color: var(--accent-colour);
-}
-
-.footer-left-side {
-  display: flex;
-  width: calc((100% - 30px) / 2);
-}
-
-.footer-form {
-  width: calc((100% - 30px) / 2);
-}
-
-.footer-links {
-  display: inline-block;
-  width: calc((100% - 30px) / 2);
 }
 
 .footer-links-list {
@@ -91,7 +72,58 @@
   margin-left: 10px;
 }
 
-.footer-left-side {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .footer-links-list {
+    justify-content: center;
+  }
+
+  .footer-links {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container.footer-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-left-side {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .adress .text {
+    margin-bottom: 9px;
+  }
+  .adress-item:first-child {
+    margin-bottom: 9px;
+  }
+
+  .footer-left-side {
+    display: flex;
+    width: calc((100% - 30px) / 2);
+  }
+
+  .footer-form {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .footer-links {
+    display: inline-block;
+    width: calc((100% - 30px) / 2);
+  }
+
+  .footer-left-side {
+    display: flex;
+    align-items: baseline;
+  }
 }
