@@ -98,6 +98,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container.footer-box {
+    display: flex;
+  }
+
   .footer .logo {
     font-size: 26px;
     line-height: 1.2;
