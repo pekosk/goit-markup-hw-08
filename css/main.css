@@ -1129,32 +1129,6 @@ p:last-child {
   }
 }
 
-.work-list {
-  margin: auto;
-  margin-top: calc(-1 * var(--work-list-set-gap));
-  margin-left: calc(-1 * var(--work-list-set-gap));
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.work-link {
-  display: block;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.work-link:hover,
-.work-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.work-list .item {
-  margin-top: var(--work-list-set-gap);
-  margin-left: var(--work-list-set-gap);
-  flex-basis: calc(100% / 3 - var(--work-list-set-gap));
-}
-
 .work-list .title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -1186,6 +1160,18 @@ p:last-child {
   letter-spacing: 0.03em;
 }
 
+.work-link {
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .works-overlay {
   width: 100%;
   height: 100%;
@@ -1202,6 +1188,35 @@ p:last-child {
 .work-link:focus .works-overlay,
 .work-link:hover .works-overlay {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 767px) {
+  .work-list .item:not(last-child) {
+    margin-bottom: var(--work-list-set-gap);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-list {
+    margin: auto;
+    margin-top: calc(-1 * var(--work-list-set-gap));
+    margin-left: calc(-1 * var(--work-list-set-gap));
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-list .item {
+    margin-top: var(--work-list-set-gap);
+    margin-left: var(--work-list-set-gap);
+    flex-basis: calc(100% / 2 - var(--work-list-set-gap));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list .item {
+    margin-top: var(--work-list-set-gap);
+    margin-left: var(--work-list-set-gap);
+    flex-basis: calc(100% / 3 - var(--work-list-set-gap));
+  }
 }
 
 .companies-icons {
