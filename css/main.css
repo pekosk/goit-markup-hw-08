@@ -968,8 +968,7 @@ p:last-child {
     width: calc((100% - 30px) / 2);
   }
   .footer-left-side {
-    display: flex;
-    align-items: baseline;
+    margin-bottom: 0px;
   }
 }
 
