@@ -741,9 +741,12 @@ p:last-child {
   justify-content: space-between;
 }
 
-.menu-social-link:not(:last-child)::after {
+.menu-social-link::after {
   content: '';
   width: 22px;
+  position: absolute;
+  top: 50%;
+  left: 125%;
   background-color: rgba(33, 33, 33, 0.2);
   display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -752,6 +755,7 @@ p:last-child {
 
 .menu-social-link {
   color: var(--accent-colour);
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
