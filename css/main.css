@@ -741,7 +741,7 @@ p:last-child {
   justify-content: space-between;
 }
 
-.menu-social-link::after {
+.menu-social-link.decor::after {
   content: '';
   width: 22px;
   position: absolute;
