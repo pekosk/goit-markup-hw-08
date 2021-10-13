@@ -673,10 +673,7 @@ p:last-child {
 .menu-window {
   background-color: var(--primary-white-color);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 480px;
+  width: 100%;
   min-height: 796px;
   font-weight: 500;
   line-height: 1.17;
@@ -703,6 +700,8 @@ p:last-child {
 .menu-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 796px;
 }
 
 .menu-nav-list {
