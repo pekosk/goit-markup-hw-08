@@ -16,6 +16,11 @@
 }
 
 .email-input {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+
   padding-left: 16px;
   flex-grow: 1;
   height: 50px;
